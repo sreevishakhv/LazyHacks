@@ -22,6 +22,9 @@ function Home() {
         <button className="home-button" onClick={() => navigate('/upload-notes')}>
           Upload Notes
         </button>
+        <button className="home-button" onClick={() => navigate('/research-assist')}>
+          Research Assist
+        </button> {/* New button for Research Assist */}
       </div>
 
       <section className="home-features">

@@ -1,23 +1,6 @@
 /* AddTask.css */
 
-.add-task-page {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #f4f6f9;
-  }
-  
-  .page-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .task-form-fullwidth {
+.task-form-fullwidth {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -48,45 +31,5 @@
   
   .task-form-fullwidth button:hover {
     background-color: #0056b3;
-  }
-  
-  .calendar-container {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    overflow: hidden;
-  }
-  
-  .calendar {
-    width: 100%;
-    height: 100%;
-    max-width: 1200px; /* Increased width to make it fill more space */
-    max-height: 100%;
-    font-size: 1.2em; /* Scale up dates and text */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    background-color: white;
-    padding: 10px;
-  }
-  
-  .task-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 0.9em; /* Adjusted size for task list items */
-  }
-  
-  .task-low {
-    color: green;
-  }
-  
-  .task-medium {
-    color: orange;
-  }
-  
-  .task-high {
-    color: red;
   }
   
