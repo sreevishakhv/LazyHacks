@@ -1,122 +1,135 @@
 .smart-assistant-page {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.summary {
   
-  .summary {
-    padding: 10px;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-  }
-  
-  .question-box {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    align-items: center; /* Center the entire question-box contents */
-  }
-  
-  .question-box textarea {
-    width: 100%;
-    height: 80px;
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    resize: none;
-  }
-  
-  .recording-indicator {
-    padding: 15px;
-    background-color: #ffdddd;
-    color: #d9534f;
-    font-weight: bold;
-    border: 1px solid #d9534f;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .question-box-buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-  }
-  
-  .mic-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #e0e0e0;
-    color: black;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .mic-button.recording {
-    background-color: #dc3545; /* Red color for recording */
-    color: white;
-  }
-  
-  .mic-button:hover:not(.recording) {
-    background-color: #d4d4d4;
-  }
-  
-  .send-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  .send-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  .send-button:hover:not(:disabled) {
-    background-color: #218838;
-  }
-  
-  .audio-playback {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-    justify-content: center; /* Center the audio playback section */
-    width: 100%;
-  }
-  
-  .close-audio-button {
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    color: #d9534f;
-    cursor: pointer;
-  }
-  
-  .close-audio-button:hover {
-    color: #c9302c;
-  }
-  
-  .response-box {
-    margin-top: 20px;
-  }
-  
-  .response-box h4 {
-    margin-bottom: 10px;
-  }
-  
-  .response-box p {
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-  }
-  
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  /* max-width: 600px; */
+  margin: auto;
+}
+
+.question-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  align-items: center;
+}
+
+.question-box textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+}
+
+.recording-indicator {
+  padding: 15px;
+  background-color: #ffdddd;
+  color: #d9534f;
+  font-weight: bold;
+  border: 1px solid #d9534f;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.question-box-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.mic-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #e0e0e0;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mic-button.recording {
+  background-color: #dc3545;
+  color: white;
+}
+
+.mic-button:hover:not(.recording) {
+  background-color: #d4d4d4;
+}
+
+.send-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.send-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.send-button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.audio-playback {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+}
+
+.close-audio-button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #d9534f;
+  cursor: pointer;
+}
+
+.close-audio-button:hover {
+  color: #c9302c;
+}
+
+.response-box {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  /* max-width: 600px; */
+  margin: auto;
+}
+
+.response-box h4 {
+  margin-bottom: 10px;
+}
+
+.response-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #333;
+}

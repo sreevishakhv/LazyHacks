@@ -1,5 +1,10 @@
 /* AddTask.css */
-
+body {
+  background-image: url('/home/sv/LazyHacks/study-tracker-ui/bg.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .task-form-fullwidth {
     display: flex;
     gap: 10px;

@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import AddTask from './pages/AddTask';
 import OptimalPlan from './pages/OptimalPlan';
-import UploadNotes from './pages/UploadNotes';
-import ResearchAssist from './pages/ResearchAssist';
+import ResearchAssist from './pages/LearningAssist';
 import SmartAssistant from './pages/SmartAssistant';
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/add-task" element={<AddTask />} />
         <Route path="/optimal-plan" element={<OptimalPlan />} />
-        <Route path="/upload-notes" element={<UploadNotes />} />
         <Route path="/research-assist" element={<ResearchAssist />} />
         <Route path="/smart-assistant" element={<SmartAssistant />} />
       </Routes>
