@@ -47,7 +47,6 @@ function OptimalPlan() {
     <div className="optimal-plan-page">
       <h2 className="page-title">Optimal Study Plan</h2>
       <p className="page-description">Your tasks are optimally scheduled based on priority and deadlines.</p>
-
       <div className="calendar-container">
         <Calendar
           tileContent={tileContent}
@@ -56,6 +55,7 @@ function OptimalPlan() {
       </div>
     </div>
   );
+  
 }
 
 export default OptimalPlan;
