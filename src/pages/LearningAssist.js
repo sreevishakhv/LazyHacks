@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LearningAssist.css';
-import Header from '../components/Header';
 
 function LearningAssist() {
   const [currentTab, setCurrentTab] = useState('Research Assistant');
@@ -134,7 +133,6 @@ function LearningAssist() {
 
   return (
     <div className="learning-assist-page">
-    <Header />
       <div className="tab-buttons">
         <button onClick={() => setCurrentTab('Personal Tutor')}>Personal Tutor</button>
         <button onClick={() => setCurrentTab('Research Assistant')}>Research Assistant</button>
